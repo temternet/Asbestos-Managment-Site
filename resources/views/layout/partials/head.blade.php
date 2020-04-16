@@ -4,6 +4,6 @@
 <meta name="author" content="">
 <title>Asbestos Manager!</title>
 <!-- Bootstrap core CSS -->
-<link href="{{asset('/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{asset('/css/bootstrap.min.css') }}" rel="stylesheet">
 <!-- Custom styles for this template -->
-<link href="/css/album.css" rel="stylesheet">
+<link href="/css/app.css" rel="stylesheet">
