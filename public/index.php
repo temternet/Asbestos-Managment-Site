@@ -23,9 +23,9 @@ define('LARAVEL_START', microtime(true));
 
 require __DIR__.'/../vendor/autoload.php';
 
-//require __DIR__.'/../resources/views/landing.blade.php';
+require __DIR__.'/../resources/views/landing.blade.php';
 
-require __DIR__.'/../routes/web.php';
+require __DIR__.'/../resources/views/layout/mainlayout.blade.php';
 
 /*
 |--------------------------------------------------------------------------
