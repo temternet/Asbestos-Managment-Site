@@ -12,5 +12,6 @@
 */
 
     Route::get('/', 'PagesCtrl@index');
+    Route::get('/', 'PagesCtrl@account');
 
 ?>
