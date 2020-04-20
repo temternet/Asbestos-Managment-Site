@@ -16,6 +16,6 @@
         </button>
         <ul class="nav navbar-nav">
          <li><a href="/">Home</a></li>
-         <li><a href="/about">Dashboard</a></li>
+         <li><a href="/dashboard">Dashboard</a></li>
     </div>
 </div>
