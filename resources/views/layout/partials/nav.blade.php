@@ -15,7 +15,9 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="nav navbar-nav">
-         <li><a href="/">Home</a></li>
-         <li><a href="/dashboard">Dashboard</a></li>
+         <li><a href="/">Dashboard</a></li>
+         <li><a href="/sites">Dashboard</a></li>
+         <li><a href="/account">Account</a></li>
+         <li><a href="/logout">Logout</a></li>
     </div>
 </div>

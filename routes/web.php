@@ -12,6 +12,7 @@
 */
 
     Route::get('/', 'PagesCtrl@index');
-    Route::get('/dashboard', 'PagesCtrl@account');
+    Route::get('/dashboard', 'PagesCtrl@dashboard');
+    Route::get('/account', 'PagesCtrl@account');
 
 ?>
