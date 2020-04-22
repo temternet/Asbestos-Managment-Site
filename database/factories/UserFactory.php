@@ -26,5 +26,5 @@ $factory->define(App\User::class, function (Faker $faker) {
         'certExpiry'  =>  $faker->date('Y-m-d', strtotime('+5 years')),
         'orgName'  =>    'temternet',
         //'remember_token' => str_random(10),
-    ];
+    ];   
 });
