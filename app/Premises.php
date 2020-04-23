@@ -54,7 +54,7 @@ class Premises extends Model
 
     public function plans()
     {
-        return $this->hasMany(AsbestosPlan::class);
+        return $this->hasOne(AsbestosPlan::class);
     }
 
     public $timestamps = false;

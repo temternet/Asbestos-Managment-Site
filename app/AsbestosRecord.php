@@ -39,5 +39,10 @@ class AsbestosRecord extends Model
         return $this->belongsTo(Premises::class);
     }
 
+    public function plans()
+    {
+        return $this->hasOne(AsbestosPlan::class);
+    }
+
     public $timestamps = false;
 }
