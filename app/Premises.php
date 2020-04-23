@@ -37,6 +37,11 @@ class Premises extends Model
         return $this->belongsTo(Organisation::class);
     }
 
+    public function site()
+    {
+        return $this->belongsTo(Site::class);
+    }
+
     public function users()
     {
         return $this->belongsToMany(User::class);

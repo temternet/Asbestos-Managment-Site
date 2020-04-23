@@ -31,5 +31,10 @@ class Site extends Model
      * @var array
      */
 
+    public function premise()
+    {
+        return $this->hasMany(Premises::class);
+    }
+
     public $timestamps = false;
 }
