@@ -36,12 +36,12 @@ class AsbestosRecord extends Model
 
     public function premise()
     {
-        return $this->belongsTo(Premises::class);
+        return $this->belongsTo('App\Premises');
     }
 
     public function plans()
     {
-        return $this->hasOne(AsbestosPlan::class);
+        return $this->hasOne('App\AsbestosPlan');
     }
 
     public $timestamps = false;

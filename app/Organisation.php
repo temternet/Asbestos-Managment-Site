@@ -34,12 +34,12 @@ class Organisation extends Model
 
     public function users()
     {
-        return $this->hasMany(User::class);
+        return $this->hasMany('App\User');
     }
 
     public function premice()
     {
-        return $this->hasMany(Premises::class);
+        return $this->hasMany('App\Premises');
     }
 
     public $timestamps = false;

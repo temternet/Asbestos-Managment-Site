@@ -33,7 +33,7 @@ class Site extends Model
 
     public function premise()
     {
-        return $this->hasMany(Premises::class);
+        return $this->hasMany('App\Premises');
     }
 
     public $timestamps = false;

@@ -34,27 +34,27 @@ class Premises extends Model
 
     public function org()
     {
-        return $this->belongsTo(Organisation::class);
+        return $this->belongsTo('App\Organisation');
     }
 
     public function site()
     {
-        return $this->belongsTo(Site::class);
+        return $this->belongsTo('App\Site');
     }
 
     public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany('App\User');
     }
 
     public function records()
     {
-        return $this->hasMany(AsbestosRecord::class);
+        return $this->hasMany('App\AsbestosRecord');
     }
 
     public function plans()
     {
-        return $this->hasOne(AsbestosPlan::class);
+        return $this->hasOne('App\AsbestosPlan');
     }
 
     public $timestamps = false;

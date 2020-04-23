@@ -37,17 +37,17 @@ class User extends Model
 
     public function org()
     {
-        return $this->belongsTo(Organisation::class);
+        return $this->belongsTo('App\Organisation');
     }
 
     public function premise()
     {
-        return $this->belongsToMany(Premises::class);
+        return $this->belongsToMany('App\Premises');
     }
 
     public function plans()
     {
-        return $this->hasMany(AsbestosPlan::class);
+        return $this->hasMany('App\AsbestosPlan');
     }
 
     public $timestamps = false;

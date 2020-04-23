@@ -34,17 +34,17 @@ class AsbestosPlan extends Model
 
     public function users()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo('App\User');
     }
 
     public function premise()
     {
-        return $this->belongsTo(Premises::class);
+        return $this->belongsTo('App\Premises');
     }
 
     public function records()
     {
-        return $this->belongsTo(AsbestosRecord::class);
+        return $this->belongsTo('App\AsbestosRecord');
     }
 
     public $timestamps = false;
