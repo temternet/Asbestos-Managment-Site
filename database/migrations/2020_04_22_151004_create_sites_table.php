@@ -14,8 +14,13 @@ class CreateSitesTable extends Migration
     public function up()
     {
         Schema::create('sites', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('siteID');
+            $table->string('addressL1');
+            $table->string('addressL2');
+            $table->string('time');
+            $table->string('country');
+            $table->string('postCode');
+            $table->string('lAuth');
         });
     }
 
