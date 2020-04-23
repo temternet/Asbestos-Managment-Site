@@ -47,5 +47,15 @@ class Premises extends Model
         return $this->belongsToMany(User::class);
     }
 
+    public function records()
+    {
+        return $this->hasMany(AsbestosRecord::class);
+    }
+
+    public function plans()
+    {
+        return $this->hasMany(AsbestosPlan::class);
+    }
+
     public $timestamps = false;
 }

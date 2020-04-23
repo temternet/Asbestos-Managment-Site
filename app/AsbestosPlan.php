@@ -37,5 +37,10 @@ class AsbestosPlan extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function premise()
+    {
+        return $this->belongsTo(Premises::class);
+    }
+
     public $timestamps = false;
 }

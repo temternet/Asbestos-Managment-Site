@@ -34,5 +34,10 @@ class AsbestosRecord extends Model
      * @var array
      */
 
+    public function premise()
+    {
+        return $this->belongsTo(Premises::class);
+    }
+
     public $timestamps = false;
 }
