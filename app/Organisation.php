@@ -39,7 +39,7 @@ class Organisation extends Model
 
     public function premice()
     {
-        return $this->hasOne(Premises::class);
+        return $this->hasMany(Premises::class);
     }
 
     public $timestamps = false;

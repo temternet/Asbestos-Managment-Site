@@ -19,7 +19,7 @@ class AsbestosPlan extends Model
      * @var array
      */
     protected $fillable = [
-        'premisesID', 'asbestosID', 'monitorDate', 'userID', 'commPlan',
+        'planID', 'premisesID', 'monitorDate', 'userID', 'commPlan',
     ];
 
    /* protected $guarded = [

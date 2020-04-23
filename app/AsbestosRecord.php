@@ -21,7 +21,7 @@ class AsbestosRecord extends Model
     protected $fillable = [
         'asbestosID', 'premisesID', 'location', 'product', 'area', 'surfaceCoating',
         'asbestosCondition', 'accessibility', 'asbestosType', 'comments', 
-        'materialScore', 'priorityScore', 'action', 'actionDate', 'deligate',
+        'materialScore', 'priorityScore', 'planID', 'action', 'actionDate', 'deligate',
     ];
 
    /* protected $guarded = [
