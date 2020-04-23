@@ -19,7 +19,7 @@ class Organisation extends Model
      * @var array
      */
     protected $fillable = [
-        'orgName', 'type', 'lAuth', 'licenceNum', 'licenceDate', 'licenceExp',
+        'orgID', 'orgName', 'type', 'lAuth', 'licenceNum', 'licenceDate', 'licenceExp',
     ];
 
    /* protected $guarded = [
@@ -31,6 +31,16 @@ class Organisation extends Model
      *
      * @var array
      */
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
+
+    public function premice()
+    {
+        return $this->hasOne(Premises::class);
+    }
 
     public $timestamps = false;
 }

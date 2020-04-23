@@ -28,8 +28,7 @@ class CreateAsbestosRecordsTable extends Migration
             $table->integer('priorityScore');
             $table->string('action');
             $table->date('actionDate');
-            $table->string('userID');
-            $table->string('orgName');
+            $table->string('deligate');
         });
     }
 

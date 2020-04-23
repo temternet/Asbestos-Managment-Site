@@ -17,7 +17,7 @@ class CreatePremisesTable extends Migration
             $table->increments('premisesID');
             $table->integer('siteID');
             $table->integer('userID');
-            $table->string('orgName');
+            $table->integer('orgID');
             $table->string('premisesAdr');
         });
     }

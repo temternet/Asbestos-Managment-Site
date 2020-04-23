@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->date('dob');
             $table->date('certDate');
             $table->date('certExpiry');
-            $table->string('orgName');
+            $table->integer('orgID');
             $table->string('password');
         });
     }

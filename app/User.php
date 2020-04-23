@@ -18,7 +18,8 @@ class User extends Model
      * @var array
      */
     protected $fillable = [
-        'userID', 'email', 'type', 'foreName', 'surName', 'dob', 'password', 'certDate', 'certExpiry', 'orgName',
+        'userID', 'email', 'type', 'foreName', 'surName', 'dob', 'password', 'certDate', 'certExpiry', 
+        'orgID',
     ];
 
    /* protected $guarded = [
@@ -33,6 +34,11 @@ class User extends Model
     protected $hidden = [
         'password', //'remember_token',
     ];
+
+    public function org()
+    {
+        return $this->belongsTo(Organisation::class);
+    }
 
     public $timestamps = false;
 }

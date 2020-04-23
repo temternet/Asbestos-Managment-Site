@@ -19,7 +19,7 @@ class Premises extends Model
      * @var array
      */
     protected $fillable = [
-        'premisesID', 'siteID', 'userID', 'orgName', 'premisesAdr',
+        'premisesID', 'siteID', 'userID', 'orgID', 'premisesAdr',
     ];
 
    /* protected $guarded = [
@@ -31,6 +31,11 @@ class Premises extends Model
      *
      * @var array
      */
+
+    public function org()
+    {
+        return $this->belongsTo(Organisation::class);
+    }
 
     public $timestamps = false;
 }
