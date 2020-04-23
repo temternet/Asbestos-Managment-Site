@@ -14,8 +14,12 @@ class CreateOrganisationsTable extends Migration
     public function up()
     {
         Schema::create('organisations', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->string('orgName');
+            $table->integer('type');
+            $table->string('lAuth');
+            $table->integer('licenceNum');;
+            $table->date('licenceDate');
+            $table->date('licenceExp');
         });
     }
 

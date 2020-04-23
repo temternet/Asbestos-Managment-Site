@@ -14,8 +14,11 @@ class CreatePremisesTable extends Migration
     public function up()
     {
         Schema::create('premises', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('premisesID');
+            $table->integer('siteID');
+            $table->integer('userID');
+            $table->string('orgName');
+            $table->string('premisesAdr');
         });
     }
 

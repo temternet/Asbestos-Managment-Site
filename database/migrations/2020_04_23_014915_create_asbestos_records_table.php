@@ -14,8 +14,22 @@ class CreateAsbestosRecordsTable extends Migration
     public function up()
     {
         Schema::create('asbestos_records', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('asbestosID');
+            $table->integer('premisesID');
+            $table->string('location');
+            $table->string('product');
+            $table->string('area');
+            $table->string('surfaceCoating');
+            $table->string('asbestosCondition');
+            $table->string('accessibility');
+            $table->integer('asbestosType');
+            $table->string('comments');
+            $table->integer('materialScore');
+            $table->integer('priorityScore');
+            $table->string('action');
+            $table->date('actionDate');
+            $table->string('userID');
+            $table->string('orgName');
         });
     }
 
