@@ -40,5 +40,15 @@ class User extends Model
         return $this->belongsTo(Organisation::class);
     }
 
+    public function premise()
+    {
+        return $this->belongsToMany(Premises::class);
+    }
+
+    public function plans()
+    {
+        return $this->hasMany(AsbestosPlan::class);
+    }
+
     public $timestamps = false;
 }

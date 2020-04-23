@@ -32,5 +32,10 @@ class AsbestosPlan extends Model
      * @var array
      */
 
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     public $timestamps = false;
 }
