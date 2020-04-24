@@ -1,23 +1,19 @@
-<div class="collapse bg-inverse" id="navbarHeader">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 py-4">
-                <h4 class="text-white">Login</h4>
-                <p class="text-muted">Login</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="navbar navbar-inverse bg-inverse">
-    <div class="container d-flex justify-content-betIen">
-        <a href="#" class="navbar-brand">Asbestos Manager</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Asbestos Manager</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-         <li><a href="/">Dashboard</a></li>
-         <li><a href="/sites">Dashboard</a></li>
-         <li><a href="/account">Account</a></li>
-         <li><a href="/logout">Logout</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/account">Account</a>
+            </li>
+            <li class="nav-link" class="nav-item">
+                <a href="/logout">Logout</a>
+            </li>
     </div>
-</div>
+</nav>
