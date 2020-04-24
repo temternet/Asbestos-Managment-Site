@@ -8,7 +8,7 @@ class PagesCtrl extends Controller
 {
     public function index(){
         $ttl = "Login";
-        return view('pages.landing',compact('ttl'));
+        return view('pages.dasboard',compact('ttl'));
     }
     
     public function dashboard(){
