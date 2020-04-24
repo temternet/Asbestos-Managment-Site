@@ -16,6 +16,7 @@ class CreateAsbestosPlansTable extends Migration
         Schema::create('asbestos_plans', function (Blueprint $table) {
             $table->increments('planID');
             $table->integer('premisesID');
+            $table->date('creationDate');
             $table->date('monitorDate');
             $table->integer('userID');
             $table->string('commPlan');

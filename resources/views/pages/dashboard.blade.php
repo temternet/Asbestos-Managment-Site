@@ -46,10 +46,10 @@
                   <tbody>
                     <tr>
                       <th scope="row">1</th>
-                      <td>Placeholder Org</td>
-                      <td href="/premises">Unit 1, Some Address, AA11 1AA</td>
-                      <td>Shinomiya Kaguya</td>
-                      <td>20/4/2020</td>
+                      <td><a href="/premises">Placeholder Org</a></td>
+                      <td><a href="/premises">Unit 1, Some Address, AA11 1AA</a></td>
+                      <td><a href="/premises">Shinomiya Kaguya</a></td>
+                      <td><a href="/premises">20/4/2020</a></td>
                     </tr>
                   <?php  ?>
                 </table>
