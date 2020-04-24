@@ -10,7 +10,13 @@
 
     <body>
 
-        @include('layout.partials.nav')
+    <?php
+        $token = 1;
+        if($token == 1) {
+            echo "@include('layout.partials.nav')";
+        }
+    
+    ?>
         @yield('content')
         @include('layout.partials.footer')
         @include('layout.partials.footer-scripts')

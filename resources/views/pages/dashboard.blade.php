@@ -2,14 +2,14 @@
 
     @section('content')
        <div class="text-muted">
-         <div class="container">
+         <div class="container bg-light">
             <div class="row">
               <div class = "container" id="user_inf">
                 <div class="row">
-                  <div class="col-xs-2 text-center">
+                  <div class="col-xs-4 text-center">
                     <h1>Fujiwara Chika</h1><br>
                   </div>
-                  <div class="col-xs-10 text-left">
+                  <div class="col-xs-8 text-left">
                     <h2>Email: fujiwara.chika@lovedetective.yo</h2>
                   </div>
                 </div>
