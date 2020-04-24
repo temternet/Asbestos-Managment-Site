@@ -47,7 +47,7 @@
                     <tr>
                       <th scope="row">1</th>
                       <td>Placeholder Org</td>
-                      <td>Unit 1, Some Address, AA11 1AA</td>
+                      <td href="/premises">Unit 1, Some Address, AA11 1AA</td>
                       <td>Shinomiya Kaguya</td>
                       <td>20/4/2020</td>
                     </tr>

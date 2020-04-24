@@ -13,12 +13,17 @@ class PagesCtrl extends Controller
     
     public function dashboard(){
       $ttl = "Dasboard";
-      return view('pages.welcome',compact('ttl'));
+      return view('pages.dashboard',compact('ttl'));
     }
 
     public function account(){
       $ttl = "account";
       return view('pages.account',compact('ttl'));
+    }
+
+    public function premises(){
+      $ttl = "premises";
+      return view('pages.details',compact('ttl'));
     }
 
 }
