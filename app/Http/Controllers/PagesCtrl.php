@@ -18,7 +18,7 @@ class PagesCtrl extends Controller
 
     public function account(){
       $ttl = "account";
-      return view('pages.welcome',compact('ttl'));
+      return view('pages.account',compact('ttl'));
     }
 
 }

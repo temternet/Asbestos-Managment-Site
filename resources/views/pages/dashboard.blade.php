@@ -6,10 +6,13 @@
             <div class="row">
               <div class = "container" id="user_inf">
                 <div class="row">
+                  <div class="col-xs-1 text-center">
+                    <h1>pfp</h1><br>
+                  </div>
                   <div class="col-xs-4 text-center">
                     <h1>Fujiwara Chika</h1><br>
                   </div>
-                  <div class="col-xs-8 text-left">
+                  <div class="col-xs-7 text-left">
                     <h2>Email: fujiwara.chika@lovedetective.yo</h2>
                   </div>
                 </div>
@@ -23,11 +26,11 @@
                 </div>
               </div>
            </div>
+          </div>
+          <div class="container">
            <div class="row">
               <h1>Registered Buildings</h1><br>
            </div>
-          </div>
-          <div class="container">
            <div class="row">
               <div class="overflow-auto" id="building_register">
                 <table class="table">

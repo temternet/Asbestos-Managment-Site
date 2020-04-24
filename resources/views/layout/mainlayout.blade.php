@@ -11,12 +11,14 @@
     <body>
 
     <?php
-        $token = 1;
+        /**$token = 1;
         if($token == 1) {
             echo "view('layout.partials.nav')";
         }
-    
+    **/
     ?>
+
+        @include('layout.partials.nav')
         @yield('content')
         @include('layout.partials.footer')
         @include('layout.partials.footer-scripts')
