@@ -27,6 +27,7 @@
                       <th scope="col">Action</th>
                       <th scope="col">By When</th>
                       <th scope="col">By Whom?</th>
+                      <th scope="col"></th>
                     </tr>
                   </thread>
                   <tbody>
@@ -45,6 +46,7 @@
                       <td>Remove please</td>
                       <td>1/1/2022</td>
                       <td>Me</td>
+                      <button type="submit" class="btn btn-primary">Edit</button>
                     </tr>
                   <?php  ?>
                 </table>

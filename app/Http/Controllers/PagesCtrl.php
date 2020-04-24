@@ -26,4 +26,9 @@ class PagesCtrl extends Controller
       return view('pages.details',compact('ttl'));
     }
 
+    public function editRecord(){
+      $ttl = "edit record";
+      return view('pages.edit',compact('ttl'));
+    }
+
 }
