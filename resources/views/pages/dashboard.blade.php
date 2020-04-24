@@ -6,7 +6,7 @@
             <div class="row">
               <div class = "container" id="user_inf">
                 <div class="row">
-                  <h1>Fujiwara Chika</h1>
+                  <h1>Fujiwara Chika</h1><br>
                   <h2>Email: fujiwara.chika@lovedetective.yo</h2>
                 </div>
                 <div class="row">
@@ -16,7 +16,7 @@
               </div>
            </div>
            <div class="row">
-              <h1>Registered Buildings</h1>
+              <h1>Registered Buildings</h1><br>
               <div class="overflow-auto" id="building_register">
                 <table class="table">
                   <thread>
