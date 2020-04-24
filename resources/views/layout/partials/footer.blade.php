@@ -1,4 +1,4 @@
-<footer class="page-footer font-small blue">
+<footer class="page-footer font-small blue fixed-bottom">
     <div class="col-xs-11">
         <div class="footer-copyright text-left py-4">Timothy Clarkson 2020:
             <a href="https://github.com/tEMternette/Asbestos-Managment-Site.git"> github repo</a>
