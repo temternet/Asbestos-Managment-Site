@@ -26,6 +26,8 @@
            <div class="row">
               <h1>Registered Buildings</h1><br>
            </div>
+          </div>
+          <div class="container">
            <div class="row">
               <div class="overflow-auto" id="building_register">
                 <table class="table">

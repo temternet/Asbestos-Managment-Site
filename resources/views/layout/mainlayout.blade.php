@@ -13,7 +13,7 @@
     <?php
         $token = 1;
         if($token == 1) {
-            echo "@include('layout.partials.nav')";
+            echo "view('layout.partials.nav')";
         }
     
     ?>
