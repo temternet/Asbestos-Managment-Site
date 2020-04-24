@@ -1,17 +1,25 @@
 @extends('layout.mainlayout')
 
     @section('content')
-       <div class="album text-muted">
+       <div class="text-muted">
          <div class="container">
             <div class="row">
               <div class = "container" id="user_inf">
                 <div class="row">
-                  <h1>Fujiwara Chika</h1><br>
-                  <h2>Email: fujiwara.chika@lovedetective.yo</h2>
+                  <div class="col-xs-2 text-center">
+                    <h1>Fujiwara Chika</h1><br>
+                  </div>
+                  <div class="col-xs-10 text-left">
+                    <h2>Email: fujiwara.chika@lovedetective.yo</h2>
+                  </div>
                 </div>
                 <div class="row">
-                  <p>Certificate ID: 100001</p>
-                  <p>Type: Inspector</p>
+                  <div class="col-xs-3 text-center">
+                    <p>Certificate ID: 100001</p>
+                  </div>
+                  <div class="col-xs-9 text-left">
+                    <p>Type: Inspector</p>
+                  </div>
                 </div>
               </div>
            </div>
@@ -41,10 +49,6 @@
                   <?php  ?>
                 </table>
               </div>
-           </div>
-           <div class="row">
-              <h1>text</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dolor vulputate quam convallis consequat. Quisque eu lorem eget magna lacinia suscipit. Maecenas condimentum vehicula eros. Fusce massa lacus, blandit et leo sed, accumsan commodo sem. Sed eget pulvinar tellus. Praesent ex diam, sodales at consequat id, viverra ut dolor. In eget orci sit amet magna sagittis mattis sit amet sed augue. Vivamus facilisis libero ligula, vel sodales ipsum sollicitudin id. Duis vitae urna rutrum, dignissim arcu ac, elementum augue. Quisque id interdum ligula. Donec tincidunt feugiat massa sed aliquam. Duis eu vehicula turpis.</p>
            </div>
          </div>
        </div>
