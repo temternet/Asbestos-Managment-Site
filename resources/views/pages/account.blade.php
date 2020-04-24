@@ -4,13 +4,12 @@
        <div class="text-muted">
          <div class="container bg-light">
             <div class="row">
-              <div class="row">
-                <div class="col-xs-1 text-center">
-                  <h1>pfp</h1><br>
-                </div>
-                <div class="col-xs-11 text-center">
-                  <h1>Fujiwara Chika</h1><br>
-                </div>
+              <div class="col-xs-1 text-center">
+                <h1>pfp</h1>
+              </div>
+              <div class="col-xs-11 text-center">
+                <h1>Fujiwara Chika</h1><br>
+              </div>
             </div>
           </div>
           <div class="container">
@@ -18,7 +17,7 @@
               <h1>Account Information</h1><br>
            </div>
            <div class="row">
-              <div class="overflow-auto" id="user_details">
+              <div class="overflow-auto col-xs-12" id="user_details">
                 <div class="row">
                   <form>
                     <div class="form-group">
@@ -31,7 +30,7 @@
                     </div>
                     <div class="form-group">
                       <label for="emailAddress">Email address:</label>
-                      <input id="emailAddress" class="form-control" type="email" placeholder="">
+                      <input id="emailAddress" class="form-control" type="email" placeholder="fujiwara.chika@lovedetective.yo">
                     </div>
                     <div class="form-group">
                       <label for="foreName">First name:</label>
