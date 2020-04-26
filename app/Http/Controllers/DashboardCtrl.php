@@ -14,6 +14,8 @@ class DashboardCtrl extends Controller
     public function index()
     {
         //
+        $premises = Premises::all()->toArray();
+        return view('pages.dashboard');
     }
 
     /**
