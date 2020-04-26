@@ -21,7 +21,7 @@ class PremisesCtrl extends Controller
                 ->join('sites', 'sites.siteID', '=', 'premises.siteID')
                 ->join('users', 'users.userID', '=', 'premises.userID')
                 ->join('asbestos_plans', 'asbestos_plans.premisesID', '=', 'premises.premisesID')
-                ->join('asbestos_records', 'asbestos_records.premisesID', '=', 'premises.premisesID')
+                ->join('asbestos_records', 'asbestos_records.premisesID', '=', 'asbestos_plans.premisesID')
                 ->join('organisations', 'organisations.orgID', '=', 'premises.orgID')
                 ->select('premises.premisesID', 'premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 
                 'sites.town', 'sites.county', 'sites.postCode', 'sites.lAuth', 'organisations.orgName', 
