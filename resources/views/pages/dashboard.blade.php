@@ -44,11 +44,11 @@
                     </tr>
                     @foreach($data as $row)
                       <tr>
-                        <td>1</td>
-                        <td>{{ $row->orgName }}</td>                    
-                        <td>{{ $row->premisesAdr }}</td>
-                        <td>name</td>
-                        <td>{{ $row->monitorDate }}</td>
+                        <td><a href="/premises">1</a></td>
+                        <td><a href="/premises">{{ $row->orgName }}</a></td>                    
+                        <td><a href="/premises">{{ $row->premisesAdr }}</a></td>
+                        <td><a href="/premises">name</td>
+                        <td><a href="/premises">{{ $row->monitorDate }}</a></td>
                       </tr>
                     @endforeach
                   </thread>
