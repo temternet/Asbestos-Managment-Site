@@ -45,10 +45,17 @@
                     @foreach($data as $row)
                     <tr>
                       <td></td>
+<<<<<<< HEAD
                       <td>{{$row['orgName']}}</td>                    
                       <td>{{$row['premisesAdr' + 'addressL1' + 'addressL2']}}</td>
                       <td>{{$row['foreName' + 'surName']}}</td>
                       <td>{{$row['monitorDate']}}</td>
+=======
+                      <td>{{$row['orgs'['orgName']]}}</td>                    
+                      <td>{{$row['premises'['premisesAdr'] + 'site'['addressL1'] + 'site'['addressL2']]}}</td>
+                      <td>{{$row['usr'['foreName'] + 'usr'['surName']]}}</td>
+                      <td>{{$row['plans'['monitorDate']]}}</td>
+>>>>>>> 0a7a6c9e55d2f5c3fef11a544805d29d6d1e33a4
                     </tr>
                     @endforeach
                   </thread>
