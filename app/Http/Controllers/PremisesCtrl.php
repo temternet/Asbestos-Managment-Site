@@ -25,7 +25,7 @@ class PremisesCtrl extends Controller
                 'asbestos_plans.planID', 'asbestos_plans.monitorDate', 'asbestos_plans.commPlan', 
                 'asbestos_plans.userID', 'asbestos_plans.creationDate', 'users.foreName', 'users.surName')
                 ->where('premises.premisesID', $premid)
-                ->get();
+                ->first();
 
         /**$usr = UsrModel::all();
         $orgs = OrgModel::all();
