@@ -42,13 +42,13 @@
                       <th scope="col">Dutyholder</th>
                       <th scope="col">Next Monitor Date</th>
                     </tr>
-                    @foreach($data as $row)
+                    @foreach($data as $value => $row)
                     <tr>
                       <td></td>
-                      <td>{{$row['orgs'['orgName']]}}</td>                    
-                      <td>{{$row['premises'['premisesAdr'] + 'site'['addressL1'] + 'site'['addressL2']]}}</td>
-                      <td>{{$row['usr'['foreName'] + 'usr'['surName']]}}</td>
-                      <td>{{$row['plans'['monitorDate']]}}</td>
+                      <td>{{$row['orgName']}}</td>                    
+                      <td>{{$row['premisesAdr' + 'addressL1' + 'addressL2']}}</td>
+                      <td>{{$row['foreName' + 'surName']}}</td>
+                      <td>{{$row['monitorDate']}}</td>
                     </tr>
                     @endforeach
                   </thread>
