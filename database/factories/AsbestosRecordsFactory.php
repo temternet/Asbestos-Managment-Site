@@ -25,7 +25,7 @@ $factory->define(App\AsbestosRecord::class, function (Faker $faker) {
         'surfaceCoating' => 'paint',
         'asbestosCondition' => 'dammaged',
         'accessibility' => 'poor',
-        'asbestosType' => 'crox',
+        'asbestosType' => 3,
         'comments' => 'n/a',
         'materialScore' => 12,
         'priorityScore' => 13,

@@ -22,7 +22,7 @@ $factory->define(App\Site::class, function (Faker $faker) {
         'town'  =>    $faker->city,
         'county'  =>    $faker->state,
         'postCode'  =>    $faker->postcode,
-        'lAuth'  =>    $faker->state
+        'lAuth'  =>    $faker->state,
         //'remember_token' => str_random(10),
     ];   
 });
