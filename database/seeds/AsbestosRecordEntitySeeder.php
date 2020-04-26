@@ -14,6 +14,6 @@ class AsbestosRecordEntitySeeder extends Seeder
     {
         //
         $count = 10;
-        factory(AsbestosRecordSeeder::class, $count)->create();
+        factory(AsbestosRecordEntitySeeder::class, $count)->create();
     }
 }
