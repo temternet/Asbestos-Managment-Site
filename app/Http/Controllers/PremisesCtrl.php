@@ -15,16 +15,23 @@ class PremisesCtrl extends Controller
     public function index($premid = null)
     {
         //
+        
+        
         $data = DB::table('premises')
                 ->join('sites', 'sites.siteID', '=', 'premises.siteID')
                 ->join('users', 'users.userID', '=', 'premises.userID')
                 ->join('asbestos_plans', 'asbestos_plans.premisesID', '=', 'premises.premisesID')
+                ->join('asbestos_records', 'asbestos_records.premisesID', '=', 'premises.premisesID')
                 ->join('organisations', 'organisations.orgID', '=', 'premises.orgID')
                 ->select('premises.premisesID', 'premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 
                 'sites.town', 'sites.county', 'sites.postCode', 'sites.lAuth', 'organisations.orgName', 
                 'asbestos_plans.planID', 'asbestos_plans.monitorDate', 'asbestos_plans.commPlan', 
-                'asbestos_plans.userID', 'asbestos_plans.creationDate', 'users.foreName', 'users.surName')
-                ->where('asbestos_plans.planID', $premid)
+                'asbestos_plans.userID', 'asbestos_plans.creationDate', 'users.foreName', 'users.surName', 'asbestos_records.asbestosID', 
+                'asbestos_records.location', 'asbestos_records.product', 'asbestos_records.area', 'asbestos_records.surfaceCoating', 
+                'asbestos_records.asbestosCondition', 'asbestos_records.accessibility', 'asbestos_records.asbestosType', 
+                'asbestos_records.comments', 'asbestos_records.materialScore', 'asbestos_records.priorityScore', 'asbestos_records.action', 
+                'asbestos_records.actionDate', 'asbestos_records.deligate')
+                ->where('premises.premisesID', $premid)
                 ->first();
 
         /**$usr = UsrModel::all();
