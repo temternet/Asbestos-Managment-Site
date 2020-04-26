@@ -48,7 +48,7 @@
                         <td><a href="/premises">{{ $row->orgName }}</a></td>                    
                         <td><a href="/premises">{{ $row->premisesAdr + ', ' + $row->addressL1 + ', ' + 
                         $row->addressL2 + '' + $row->town + ', ' + $row->county + ', ' + $row->postCode }}</a></td>
-                        <td><a href="/premises">{{ $row->forName + '' + $row->surName }}</td>
+                        <td><a href="/premises">{{ $row->foreName + '' + $row->surName }}</td>
                         <td><a href="/premises">{{ $row->monitorDate }}</a></td>
                       </tr>
                     @endforeach
