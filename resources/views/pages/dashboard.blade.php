@@ -42,6 +42,15 @@
                       <th scope="col">Dutyholder</th>
                       <th scope="col">Next Monitor Date</th>
                     </tr>
+                    @foreach($premises as $row)
+                    <tr>
+                      <td></td>
+                      <td>{{$row['orgID']}}</td>                    
+                      <td>{{$row['premisesAdr']}}</td>
+                      <td>{{$row['userID']}}</td>
+                      <td>{{$row['siteID']}}</td>
+                    </tr>
+                    @endforeach
                   </thread>
                   <tbody>
                     <tr>
