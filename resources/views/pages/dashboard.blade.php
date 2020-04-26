@@ -45,7 +45,7 @@
                     @for($row = 0; $row <= 10; $row++)
                     <tr>
                       <td></td>
-                      <td>{{$orgs['orgName']}}</td>                    
+                      <td>{{$orgs[1[$row]]}}</td>                    
                       <td>{{$premises['premisesAdr'] + site['addressL1'] + site['addressL2']}}</td>
                       <td>{{$usr['foreName'] + usr['surName']}}</td>
                       <td>{{$plans['monitorDate']}}</td>
