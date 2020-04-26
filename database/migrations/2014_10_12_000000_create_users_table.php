@@ -19,9 +19,9 @@ class CreateUsersTable extends Migration
             $table->integer('type');
             $table->string('foreName');
             $table->string('surName');
-            $table->date('dob');
-            $table->date('certDate');
-            $table->date('certExpiry');
+            $table->DATE('dob');
+            $table->DATE('certDate');
+            $table->DATE('certExpiry');
             $table->integer('orgID');
             $table->string('password');
         });

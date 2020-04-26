@@ -19,8 +19,8 @@ class CreateOrganisationsTable extends Migration
             $table->integer('type');
             $table->string('lAuth');
             $table->integer('licenceNum');;
-            $table->date('licenceDate');
-            $table->date('licenceExp');
+            $table->DATE('licenceDate');
+            $table->DATE('licenceExp');
         });
     }
 

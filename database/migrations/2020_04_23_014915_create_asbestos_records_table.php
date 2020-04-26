@@ -28,7 +28,7 @@ class CreateAsbestosRecordsTable extends Migration
             $table->integer('priorityScore');
             $table->integer('planID');
             $table->string('action');
-            $table->date('actionDate');
+            $table->DATE('actionDate');
             $table->string('deligate');
         });
     }
