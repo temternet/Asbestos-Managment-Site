@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Site extends Model
 {
-    protected $table = 'Site';
+    protected $table = 'sites';
 
     use Notifiable;
 

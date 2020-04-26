@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class Organisation extends Model
 {
     //
-    protected $table = 'Organisation';
+    protected $table = 'organisations';
 
     use Notifiable;
 
