@@ -46,7 +46,7 @@
                       <td>Remove please</td>
                       <td>1/1/2022</td>
                       <td>Me</td>
-                      <td><button type="submit" class="btn btn-primary">Edit</button></td>
+                      <button type="submit" class="btn btn-primary">Edit</button>
                     </tr>
                   <?php  ?>
                 </table>
