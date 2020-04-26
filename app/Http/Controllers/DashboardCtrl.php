@@ -20,11 +20,12 @@ class DashboardCtrl extends Controller
     public function index()
     {
         //
-        $usr = UsrModel::all()->toArray();
-        $orgs = OrgModel::all()->toArray();
-        $site = SiteModel::all()->toArray();
-        $premises = PremisesModel::all()->toArray();
-        $plans = PlanModel::all()->toArray();
+        $usr = UsrModel::all();
+        $orgs = OrgModel::all();
+        $site = SiteModel::all();
+        $premises = PremisesModel::all();
+        $plans = PlanModel::all();
+        
         return view('pages.dashboard', compact('usr', 'orgs', 'site', 'premises', 'plans'));
 
         /**$usr = UserModel::all()->toArray();
