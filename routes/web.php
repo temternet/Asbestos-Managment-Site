@@ -18,3 +18,6 @@
     Route::get('/edit_record', 'PagesCtrl@editRecord');
 
 ?>
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
