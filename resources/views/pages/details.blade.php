@@ -61,38 +61,40 @@
             <h1>Asbestos Management Plan</h1><br> 
           </div>
           <div class="row">
+          @foreach($data as $row)
             <form>
               <div class="form-group">
-                <label for="planID">Plan ID:</label>
-                <input id="certExp" class="form-control" type="text" value="{{ $data->planID }}" readonly>
+                <label for="planid">Plan ID:</label>
+                <input id="planid" class="form-control" type="text" value="{{ $row->planID }}" readonly>
               </div>
               <div class="form-group">
                 <label for="address">Premises Address:</label>
-                <textarea id="address" class="form-control rounded-0" rows="3" value="{{ $data->premisesAdr . ', ' . 
-                $data->addressL1 . ', ' . $data->addressL2 . ', ' . $data->town . ', ' . $data->county . ', ' . 
-                $data->postCode }}" readonly></textarea>
+                <textarea id="address" class="form-control rounded-0" rows="3" value="{{ $row->premisesAdr . ', ' . 
+                $row->addressL1 . ', ' . $row->addressL2 . ', ' . $row->town . ', ' . $row->county . ', ' . 
+                $row->postCode }}" readonly></textarea>
               </div>
               <div class="form-group">
                 <label for="monDate">Monitoring Date:</label>
-                <input id="monDate" class="form-control" type="date" value="{{ $data->monitorDate }}">
+                <input id="monDate" class="form-control" type="date" value="{{ $row->monitorDate }}">
               </div>
               <div class="form-group">
                 <label for="commplan">Communication Plan:</label>
-                <textarea id="commplan" class="form-control rounded-0" rows="10" value="{{ $data->commPlan }}">
+                <textarea id="commplan" class="form-control rounded-0" rows="10" value="{{ $row->commPlan }}">
                 </textarea>
               </div>
               <div class="form-group">
                 <label for="createOn">Responsible Person:</label>
-                <input id="createOn" class="form-control" type="text" value="{{ $data->userID }}" readonly>
+                <input id="createOn" class="form-control" type="text" value="{{ $row->userID }}" readonly>
               </div>
               <div class="form-group">
                 <label for="createOn">Date Created:</label>
-                <input id="createOn" class="form-control" type="date" value="{{ $data->creationDate }}" readonly>
+                <input id="createOn" class="form-control" type="date" value="{{ $row->creationDate }}" readonly>
               </div>
               <button type="reset" value="Reset" class="btn btn-primary">New</button>
               <button type="submit" class="btn btn-primary">Save</button>
             </form> 
           </div>
+          @endforeach
         </div>
       </div>
     @endsection
