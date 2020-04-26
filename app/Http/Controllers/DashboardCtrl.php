@@ -22,7 +22,7 @@ class DashboardCtrl extends Controller
         //
         $data = [
             'usr' => UsrModel::all()->toArray(),
-        'org' => OrgModel::all()->toArray(),
+        'orgs' => OrgModel::all()->toArray(),
         'site' => SiteModel::all()->toArray(),
         'premises' => PremisesModel::all()->toArray(),
         'plans' => PlanModel::all()->toArray()];

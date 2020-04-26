@@ -45,7 +45,7 @@
                     @foreach($data as $row)
                     <tr>
                       <td></td>
-                      <td>{{$row[org['orgName']]}}</td>                    
+                      <td>{{$row[orgs['orgName']]}}</td>                    
                       <td>{{$row[premises['premisesAdr'] + site['addressL1'] + site['addressL2']]}}</td>
                       <td>{{$row[usr['foreName'] + usr['surName']]}}</td>
                       <td>{{$row[plans['monitorDate']]}}</td>
