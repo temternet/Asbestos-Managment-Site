@@ -68,9 +68,10 @@
               </div>
               <div class="form-group">
                 <label for="address">Premises Address:</label>
-                <textarea id="address" class="form-control rounded-0" rows="3" value="{{ $data->premisesAdr . ', ' . 
-                  $data->addressL1 . ', ' . $data->addressL2 . ', ' . $data->town . ', ' . $data->county . ', ' . 
-                  $data->postCode }}" readonly></textarea>
+                <textarea id="address" class="form-control rounded-0" rows="3" readonly>
+                  {{ $data->premisesAdr . ', ' . $data->addressL1 . ', ' . $data->addressL2 . ', ' . 
+                  $data->town . ', ' . $data->county . ',' . $data->postCode }}
+                </textarea>
               </div>
               <div class="form-group">
                 <label for="monDate">Monitoring Date:</label>
@@ -78,12 +79,13 @@
               </div>
               <div class="form-group">
                 <label for="commplan">Communication Plan:</label>
-                <textarea id="commplan" class="form-control rounded-0" rows="10" value="{{ $data->commPlan }}">
+                <textarea id="commplan" class="form-control rounded-0" rows="10">
+                  {{ $data->commPlan }}
                 </textarea>
               </div>
               <div class="form-group">
                 <label for="createOn">Responsible Person:</label>
-                <input id="createOn" class="form-control" type="text" value="{{ $data->userID }}" readonly>
+                <input id="createOn" class="form-control" type="text" value="{{ $data->foreName . ' ' . $data->surName }}" readonly>
               </div>
               <div class="form-group">
                 <label for="createOn">Date Created:</label>
