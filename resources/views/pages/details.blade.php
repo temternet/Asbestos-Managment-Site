@@ -31,7 +31,7 @@
                     </tr>
                   </thread>
                   <tbody>
-                    @foreach($data as $row)
+                    @foreach($recs as $row)
                       <tr>
                         <th scope="row">{{ $num++ }}</th>
                         <td>{{ $row->location }}</td>
