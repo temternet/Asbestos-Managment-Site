@@ -42,15 +42,15 @@
                       <th scope="col">Dutyholder</th>
                       <th scope="col">Next Monitor Date</th>
                     </tr>
-                    @for($row = 0; $row <= 10; $row++)
-                    <tr>
-                      <td></td>
-                      <td>{{ $orgs->orgName }}</td>                    
-                      <td>{{ $premises->premisesAdr + $site->addressL1 + $site->addressL2 }}</td>
-                      <td>{{ $usr->surName + $usr->foreName }}</td>
-                      <td>{{ $plans->monitorDate }}</td>
-                    </tr>
-                    @endfor
+                    @foreach($data as $row)
+                      <tr>
+                        <td>1</td>
+                        <td>{{ $row->orgName }}</td>                    
+                        <td>{{ $row->premisesAdr }}</td>
+                        <td>name</td>
+                        <td>{{ $row->monitorDate }}</td>
+                      </tr>
+                    @endforeach
                   </thread>
                   <tbody>
                     <tr>

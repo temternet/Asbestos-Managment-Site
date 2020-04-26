@@ -9,6 +9,7 @@ use App\Organisation as OrgModel;
 use App\AsbestosPlan as PlanModel;
 
 use Illuminate\Http\Request;
+use DB;
 
 class DashboardCtrl extends Controller
 {
@@ -20,13 +21,21 @@ class DashboardCtrl extends Controller
     public function index()
     {
         //
-        $usr = UsrModel::all();
+        $data = DB::table('premises')
+                ->join('sites', 'sites.siteID', '=', 'premises.siteID')
+                ->join('asbestos_plans', 'asbestos_plans.premisesID', '=', 'premises.premisesID')
+                ->join('organisations', 'organisations.orgID', '=', 'premises.orgID')
+                ->select('premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 'sites.town', 'sites.county', 
+                'sites.postCode', 'sites.lAuth', 'organisations.orgName', 'asbestos_plans.monitorDate')
+                ->get();
+
+        /**$usr = UsrModel::all();
         $orgs = OrgModel::all();
         $site = SiteModel::all();
         $premises = PremisesModel::all();
-        $plans = PlanModel::all();
-        
-        return view('pages.dashboard', compact('usr', 'orgs', 'site', 'premises', 'plans'));
+        $plans = PlanModel::all();**/
+
+        return view('pages.dashboard', compact('data'));
 
         /**$usr = UserModel::all()->toArray();
         return view('pages.dashboard', compact('usr'));
