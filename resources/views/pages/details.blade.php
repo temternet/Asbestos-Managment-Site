@@ -64,28 +64,30 @@
             <form>
               <div class="form-group">
                 <label for="planID">Plan ID:</label>
-                <input id="certExp" class="form-control" type="text" placeholder="12345678" readonly>
+                <input id="certExp" class="form-control" type="text" value="{{ $data->planID }}" readonly>
               </div>
               <div class="form-group">
                 <label for="address">Premises Address:</label>
-                <textarea id="address" class="form-control rounded-0" rows="3" placeholder="51 A" readonly></textarea>
+                <textarea id="address" class="form-control rounded-0" rows="3" value="{{ $data->premisesAdr . ', ' . 
+                $data->addressL1 . ', ' . $data->addressL2 . ', ' . $data->town . ', ' . $data->county . ', ' . 
+                $data->postCode }}" readonly></textarea>
               </div>
               <div class="form-group">
                 <label for="monDate">Monitoring Date:</label>
-                <input id="monDate" class="form-control" type="date" placeholder="15/02/2020">
+                <input id="monDate" class="form-control" type="date" value="{{ $data->monitorDate }}">
               </div>
               <div class="form-group">
-                <label for="commPlan">Communication Plan:</label>
-                <textarea id="commPlan" class="form-control rounded-0" rows="10" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas dolor vulputate quam convallis consequat. Quisque eu lorem eget magna lacinia suscipit. Maecenas condimentum vehicula eros. Fusce massa lacus, blandit et leo sed, accumsan commodo sem. Sed eget pulvinar tellus. Praesent ex diam, sodales at consequat id, viverra ut dolor. In eget orci sit amet magna sagittis mattis sit amet sed augue. Vivamus facilisis libero ligula, vel sodales ipsum sollicitudin id. Duis vitae urna rutrum, dignissim arcu ac, elementum augue. Quisque id interdum ligula. Donec tincidunt feugiat massa sed aliquam. Duis eu vehicula turpis.">
+                <label for="commplan">Communication Plan:</label>
+                <textarea id="commplan" class="form-control rounded-0" rows="10" value="{{ $data->commPlan }}">
                 </textarea>
               </div>
               <div class="form-group">
                 <label for="createOn">Responsible Person:</label>
-                <input id="createOn" class="form-control" type="text" placeholder="Kaguya Shinomiya" readonly>
+                <input id="createOn" class="form-control" type="text" value="{{ $data->userID }}" readonly>
               </div>
               <div class="form-group">
                 <label for="createOn">Date Created:</label>
-                <input id="createOn" class="form-control" type="date" placeholder="15/02/1999" readonly>
+                <input id="createOn" class="form-control" type="date" value="{{ $data->creationDate }}" readonly>
               </div>
               <button type="reset" value="Reset" class="btn btn-primary">New</button>
               <button type="submit" class="btn btn-primary">Save</button>

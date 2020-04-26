@@ -22,7 +22,9 @@ class PremisesCtrl extends Controller
                 ->join('organisations', 'organisations.orgID', '=', 'premises.orgID')
                 ->select('premises.premisesID', 'premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 
                 'sites.town', 'sites.county', 'sites.postCode', 'sites.lAuth', 'organisations.orgName', 
-                'asbestos_plans.monitorDate', 'users.foreName', 'users.surName')
+                'asbestos_plans.planID', 'asbestos_plans.monitorDate', 'asbestos_plans.commPlan', 
+                'asbestos_plans.userID', 'asbestos_plans.creationDate', 'users.foreName', 'users.surName')
+                ->where('premises.premisesID', $premid)-first()
                 ->get();
 
         /**$usr = UsrModel::all();

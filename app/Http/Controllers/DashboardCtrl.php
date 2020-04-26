@@ -21,6 +21,8 @@ class DashboardCtrl extends Controller
     public function index()
     {
         //
+        $num = 1;
+
         $data = DB::table('premises')
                 ->join('sites', 'sites.siteID', '=', 'premises.siteID')
                 ->join('users', 'users.userID', '=', 'premises.userID')
@@ -37,7 +39,7 @@ class DashboardCtrl extends Controller
         $premises = PremisesModel::all();
         $plans = PlanModel::all();**/
 
-        return view('pages.dashboard', compact('data'));
+        return view('pages.dashboard', compact('data', 'num'));
 
         /**$usr = UserModel::all()->toArray();
         return view('pages.dashboard', compact('usr'));
