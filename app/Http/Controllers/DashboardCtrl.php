@@ -20,7 +20,7 @@ class DashboardCtrl extends Controller
     {
         //
         $premises = PremisesModel::all()->toArray();
-        return view('pages.dashboard');
+        return view('pages.dashboard', compact('premises'));
     }
 
     /**
