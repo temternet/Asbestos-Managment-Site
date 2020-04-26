@@ -44,12 +44,12 @@
                     </tr>
                     @foreach($data as $row)
                       <tr>
-                        <td><a href="/premises/{{$row->premesisID}}">1</a></td>
-                        <td><a href="/premises/{{$row->premesisID}}">{{ $row->orgName }}</a></td>                    
-                        <td><a href="/premises/{{$row->premesisID}}">{{ $row->premisesAdr . ', ' . $row->addressL1 . ', ' . 
+                        <td><a href="/premises/{{$row->premisesID}}">1</a></td>
+                        <td><a href="/premises/{{$row->premisesID}}">{{ $row->orgName }}</a></td>                    
+                        <td><a href="/premises/{{$row->premisesID}}">{{ $row->premisesAdr . ', ' . $row->addressL1 . ', ' . 
                         $row->addressL2 . ', ' . $row->town . ', ' . $row->county . ', ' . $row->postCode }}</a></td>
-                        <td><a href="/premises/{{$row->premesisID}}">{{ $row->foreName . ' ' . $row->surName }}</td>
-                        <td><a href="/premises/{{$row->premesisID}}">{{ $row->monitorDate }}</a></td>
+                        <td><a href="/premises/{{$row->premisesID}}">{{ $row->foreName . ' ' . $row->surName }}</td>
+                        <td><a href="/premises/{{$row->premisesID}}">{{ $row->monitorDate }}</a></td>
                       </tr>
                     @endforeach
                   </thread>
