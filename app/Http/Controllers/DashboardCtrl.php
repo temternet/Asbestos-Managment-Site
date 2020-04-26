@@ -6,7 +6,7 @@ use App\User as UsrModel;
 use App\Site as SiteModel;
 use App\Premises as PremisesModel;
 use App\Organisation as OrgModel;
-use App\AsbesotsPlan as PlanModel;
+use App\AsbestosPlan as PlanModel;
 
 use Illuminate\Http\Request;
 
