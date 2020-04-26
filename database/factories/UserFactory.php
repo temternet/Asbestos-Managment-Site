@@ -25,7 +25,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'password'  =>    Hash::make('password'),
         'certDate'  =>    $faker->date('Y-m-d'),
         'certExpiry'  =>  $faker->date('Y-m-d', strtotime('+5 years')),
-        'orgName'  =>    'temternet',
+        'orgID'  =>    'temternet',
         //'remember_token' => str_random(10),
     ];   
 });
