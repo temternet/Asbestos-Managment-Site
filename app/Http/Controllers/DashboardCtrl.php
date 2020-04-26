@@ -1,8 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Http\Controllers;
 
-//namespace App\Http\Controllers;
+use App\User;
+use App\Site;
+use App\Premises as PremisesModel;
+use App\Organisation;
 
 use Illuminate\Http\Request;
 
@@ -16,7 +19,7 @@ class DashboardCtrl extends Controller
     public function index()
     {
         //
-        $premises = Premises::all()->toArray();
+        $premises = PremisesModel::all()->toArray();
         return view('pages.dashboard');
     }
 
