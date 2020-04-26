@@ -42,7 +42,7 @@
                       <th scope="col">Dutyholder</th>
                       <th scope="col">Next Monitor Date</th>
                     </tr>
-                    @foreach($recs as $row)
+                    @foreach($data as $row)
                       <tr>
                         <td><a href="/premises/{{$row->premisesID}}">{{ $num++ }}</a></td>
                         <td><a href="/premises/{{$row->premisesID}}">{{ $row->orgName }}</a></td>                    
