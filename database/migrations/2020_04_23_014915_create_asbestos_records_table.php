@@ -22,7 +22,7 @@ class CreateAsbestosRecordsTable extends Migration
             $table->string('surfaceCoating');
             $table->string('asbestosCondition');
             $table->string('accessibility');
-            $table->integer('asbestosType');
+            $table->string('asbestosType');
             $table->string('comments');
             $table->integer('materialScore');
             $table->integer('priorityScore');

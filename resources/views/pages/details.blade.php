@@ -31,23 +31,25 @@
                     </tr>
                   </thread>
                   <tbody>
-                    <tr>
-                      <th scope="row">123456</th>
-                      <td>Roof</td>
-                      <td>Asbestos Cement</td>
-                      <td>2 square metres</td>
-                      <td>Felt</td>
-                      <td>Dammaged</td>
-                      <td>Difficult</td>
-                      <td>Croxidolite</td>
-                      <td></td>
-                      <td>10</td>
-                      <td>10</td>
-                      <td>Remove please</td>
-                      <td>1/1/2022</td>
-                      <td>Me</td>
-                      <button type="submit" class="btn btn-primary">Edit</button>
-                    </tr>
+                    @foreach($data as $row)
+                      <tr>
+                        <th scope="row">{{ $num++ }}</th>
+                        <td>{{ $row->location }}</td>
+                        <td>{{ $row->product }}</td>
+                        <td>{{ $row->area }}</td>
+                        <td>{{ $row->surfaceCoating }}</td>
+                        <td>{{ $row->asbestosCondition }}</td>
+                        <td>{{ $row->accessibility }}</td>
+                        <td>{{ $row->asbestosType }}</td>
+                        <td>{{ $row->comments }}</td>
+                        <td>{{ $row->materialScore }}</td>
+                        <td>{{ $row->priorityScore }}</td>
+                        <td>{{ $row->action }}</td>
+                        <td>{{ $row->actionDate }}</td>
+                        <td>{{ $row->deligate }}</td>
+                        <td><button type="submit" class="btn btn-primary">Edit</button></td>
+                      </tr>
+                    @endforeach
                   <?php  ?>
                 </table>
                 <button type="submit" class="btn btn-primary">Add new record</button>

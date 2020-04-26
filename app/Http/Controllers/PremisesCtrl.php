@@ -15,7 +15,7 @@ class PremisesCtrl extends Controller
     public function index($premid = null)
     {
         //
-        
+        $num = 1;
         
         $data = DB::table('premises')
                 ->join('sites', 'sites.siteID', '=', 'premises.siteID')
@@ -40,7 +40,7 @@ class PremisesCtrl extends Controller
         $premises = PremisesModel::all();
         $plans = PlanModel::all();**/
 
-        return view('pages.details', compact('data', 'premid'));
+        return view('pages.details', compact('data', 'premid', 'num'));
 
         /**$usr = UserModel::all()->toArray();
         return view('pages.dashboard', compact('usr'));
