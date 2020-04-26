@@ -20,7 +20,7 @@ $factory->define(App\Organisation::class, function (Faker $faker) {
         'orgName' =>  $faker->lastName,
         'type'  =>  1,
         'lAuth'  =>    $faker->state,
-        'licenceNum'  =>    $faker->lastName,
+        'licenceNum'  =>    rand(100000,999999),
         'licenceDate'  =>    $faker->date('Y-m-d'),
         'licenceExp'  =>  $faker->date('Y-m-d', strtotime('+5 years')),
         //'remember_token' => str_random(10),
