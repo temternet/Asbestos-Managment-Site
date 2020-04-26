@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use App\Site;
+use App\User as UsrModel;
+use App\Site as SiteModel;
 use App\Premises as PremisesModel;
-use App\Organisation;
+use App\Organisation as OrgModel;
+use App\AsbesotsPlan as PlanModel;
 
 use Illuminate\Http\Request;
 
@@ -19,8 +20,22 @@ class DashboardCtrl extends Controller
     public function index()
     {
         //
+        $data = [
+            'usr' => UsrModel::all()->toArray(),
+        'org' => OrgModel::all()->toArray(),
+        'site' => SiteModel::all()->toArray(),
+        'premises' => PremisesModel::all()->toArray(),
+        'plans' => PlanModel::all()->toArray()];
+        return view('pages.dashboard', compact('data'));
+
+        /**$usr = UserModel::all()->toArray();
+        return view('pages.dashboard', compact('usr'));
+        $org = OrgModel::all()->toArray();
+        return view('pages.dashboard', compact('org'));
+        $site = SiteModel::all()->toArray();
+        return view('pages.dashboard', compact('site'));
         $premises = PremisesModel::all()->toArray();
-        return view('pages.dashboard', compact('premises'));
+        return view('pages.dashboard', compact('premises'));**/
     }
 
     /**
