@@ -32,7 +32,7 @@ class PremisesCtrl extends Controller
                 'asbestos_records.comments', 'asbestos_records.materialScore', 'asbestos_records.priorityScore', 'asbestos_records.action', 
                 'asbestos_records.actionDate', 'asbestos_records.deligate')
                 ->where('premises.premisesID', $premid)
-                ->first();
+                ->get();
 
         /**$usr = UsrModel::all();
         $orgs = OrgModel::all();
