@@ -17,7 +17,6 @@ use App\AsbestosRecord;
 $factory->define(App\AsbestosRecord::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
-        'asbestosID' => 1,
         'premisesID' => 1,
         'location' => 'roof',
         'product' => 'cement',
