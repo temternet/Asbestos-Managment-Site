@@ -47,7 +47,7 @@
                       <td></td>
                       <td>{{$row['orgName']}}</td>                    
                       <td>{{$row['premisesAdr' + 'addressL1' + 'addressL2']}}</td>
-                      <td>{{$row['foreName'] + 'surName']}}</td>
+                      <td>{{$row['foreName' + 'surName']}}</td>
                       <td>{{$row['monitorDate']}}</td>
                     </tr>
                     @endforeach
