@@ -14,7 +14,7 @@ use App\AsbestosPlan;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\AsbestosPlan::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
         'planID' =>  1,

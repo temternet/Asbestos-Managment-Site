@@ -14,7 +14,7 @@ use App\Site;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Site::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
         'addressL1' =>  $faker->streetAddress,

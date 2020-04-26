@@ -14,7 +14,7 @@ use App\Premises;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Premises::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
         'siteID'  =>  1,

@@ -14,7 +14,7 @@ use App\Organisation;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Organisation::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
         'orgName' =>  $faker->lastName,
