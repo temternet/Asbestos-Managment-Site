@@ -50,7 +50,7 @@
                       <td>{{$usr['foreName'] + usr['surName']}}</td>
                       <td>{{$plans['monitorDate']}}</td>
                     </tr>
-                    @endforeach
+                    @endfor
                   </thread>
                   <tbody>
                     <tr>
