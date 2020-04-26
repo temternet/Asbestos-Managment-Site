@@ -17,7 +17,6 @@ use App\AsbestosPlan;
 $factory->define(App\AsbestosPlan::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
-        'planID' =>  1,
         'premisesID'  =>  1,
         'creationDate'  =>    $faker->date('Y-m-d'),
         'monitorDate'  =>    $faker->date('Y-m-d'),
