@@ -45,10 +45,10 @@
                     @for($row = 0; $row <= 10; $row++)
                     <tr>
                       <td></td>
-                      <td>{{$orgs[1]}}</td>                    
-                      <td>{{$premises[4] + site[2] + site[3]}}</td>
-                      <td>{{$usr[3] + usr[4]}}</td>
-                      <td>{{$plans[2]}}</td>
+                      <td>{{ $orgs->orgName }}</td>                    
+                      <td>{{ $premises->premisesAdr + $site->addressL1 + $site->addressL2 }}</td>
+                      <td>{{ $usr->surName + $usr->foreName }}</td>
+                      <td>{{ $plans->monitorDate }}</td>
                     </tr>
                     @endfor
                   </thread>
