@@ -4,7 +4,7 @@
       <div class="text-muted">
         <div class="row">
 
-          <div class="container bg-light">
+          <div class="container bg-light col-xs-8">
            <div class="row">
               <h1>Asbestos Register</h1><br>
            </div>
@@ -58,7 +58,7 @@
          </div>
 
 
-        <div class="container bg-light">
+        <div class="container bg-light col-xs-8">
           <div class="row">
             <h1>Asbestos Management Plan</h1><br> 
           </div>
