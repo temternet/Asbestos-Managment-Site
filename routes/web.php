@@ -11,8 +11,8 @@
 |
 */
 
-    Route::get('/', 'PagesCtrl@index');
-    Route::get('/dashboard', 'PagesCtrl@dashboard', 'DashboardCtrl');
+    Route::get('/', 'DashboardCtrl');
+    Route::get('/dashboard', 'DashboardCtrl');
     Route::get('/account', 'PagesCtrl@account');
     Route::get('/premises', 'PagesCtrl@premises');
     Route::get('/edit_record', 'PagesCtrl@editRecord');
