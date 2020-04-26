@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class OrggSeeder extends Seeder
+class SiteEntitySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,5 +12,7 @@ class OrggSeeder extends Seeder
     public function run()
     {
         //
+        $count = 10;
+        factory(Site::class, $count)->create();
     }
 }

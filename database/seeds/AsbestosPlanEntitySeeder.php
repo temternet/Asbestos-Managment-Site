@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class asbestosrecordseeder extends Seeder
+class AsbestosPlanEntitySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,5 +12,7 @@ class asbestosrecordseeder extends Seeder
     public function run()
     {
         //
+        $count = 10;
+        factory(AsbestosPlan::class, $count)->create();
     }
 }

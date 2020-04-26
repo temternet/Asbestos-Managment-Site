@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class site extends Seeder
+class PremisesEntitySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,5 +12,7 @@ class site extends Seeder
     public function run()
     {
         //
+        $count = 10;
+        factory(Premises::class, $count)->create();
     }
 }
