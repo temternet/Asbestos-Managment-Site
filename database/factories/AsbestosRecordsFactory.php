@@ -31,7 +31,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'priorityScore' => 13,
         'planID' => 1,
         'action' => 'leave it for now',
-        'actionDate' => $faker->date('Y-m-d'),
+        'actionDate' => $faker->date('d-m-Y'),
         'deligate' => $faker->name,
         //'remember_token' => str_random(10),
     ];   

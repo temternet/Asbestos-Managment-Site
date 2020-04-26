@@ -21,8 +21,8 @@ $factory->define(App\User::class, function (Faker $faker) {
         'type'  =>  1,
         'lAuth'  =>    $faker->state,
         'licenceNum'  =>    $faker->lastName,
-        'licenceDate'  =>    $faker->date('Y-m-d'),
-        'licenceExp'  =>  $faker->date('Y-m-d', strtotime('+5 years')),
+        'licenceDate'  =>    $faker->date('d-m-Y'),
+        'licenceExp'  =>  $faker->date('d-m-Y', strtotime('+5 years')),
         //'remember_token' => str_random(10),
     ];   
 });

@@ -21,11 +21,11 @@ $factory->define(App\User::class, function (Faker $faker) {
         'type'  =>  1,
         'foreName'  =>    $faker->firstName,
         'surName'  =>    $faker->lastName,
-        'dob'  =>    $faker->date('Y-m-d'),
+        'dob'  =>    $faker->date('d-m-Y'),
         'password'  =>    Hash::make('password'),
-        'certDate'  =>    $faker->date('Y-m-d'),
-        'certExpiry'  =>  $faker->date('Y-m-d', strtotime('+5 years')),
-        'orgID'  =>    'temternet',
+        'certDate'  =>    $faker->date('d-m-Y'),
+        'certExpiry'  =>  $faker->date('d-m-Y', strtotime('+5 years')),
+        'orgID'  =>    1,
         //'remember_token' => str_random(10),
     ];   
 });
