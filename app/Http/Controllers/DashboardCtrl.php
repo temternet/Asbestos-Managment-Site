@@ -23,10 +23,12 @@ class DashboardCtrl extends Controller
         //
         $data = DB::table('premises')
                 ->join('sites', 'sites.siteID', '=', 'premises.siteID')
+                ->join('users', 'users.userID', '=', 'premises.userID')
                 ->join('asbestos_plans', 'asbestos_plans.premisesID', '=', 'premises.premisesID')
                 ->join('organisations', 'organisations.orgID', '=', 'premises.orgID')
-                ->select('premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 'sites.town', 'sites.county', 
-                'sites.postCode', 'sites.lAuth', 'organisations.orgName', 'asbestos_plans.monitorDate')
+                ->select('premises.premisesID', 'premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 
+                'sites.town', 'sites.county', 'sites.postCode', 'sites.lAuth', 'organisations.orgName', 
+                'asbestos_plans.monitorDate', 'users.foreName', 'users.surName')
                 ->get();
 
         /**$usr = UsrModel::all();
