@@ -17,8 +17,8 @@ class CreateSitesTable extends Migration
             $table->increments('siteID');
             $table->string('addressL1');
             $table->string('addressL2');
-            $table->string('time');
-            $table->string('country');
+            $table->string('town');
+            $table->string('county');
             $table->string('postCode');
             $table->string('lAuth');
         });
