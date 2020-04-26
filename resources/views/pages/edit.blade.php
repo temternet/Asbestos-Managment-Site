@@ -5,7 +5,7 @@
         <div class="row">
           <div class="container bg-light">
             <div class="row">
-              <h1>Asbestos Management Plan</h1><br> 
+              <h1>Edit Record</h1><br> 
             </div>
             <div class="row">
               <form>
@@ -14,8 +14,8 @@
                   <input id="asbestosID" class="form-control" type="text" placeholder="12345678" readonly>
                 </div>
                 <div class="form-group">
-                  <label for="address">Where:</label>
-                  <input id="prod" class="form-control" type="text" placeholder="">
+                  <label for="where">Where:</label>
+                  <input id="where" class="form-control" type="text" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="prod">Product:</label>
