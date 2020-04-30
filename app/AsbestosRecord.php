@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Model
+class AsbestosRecord extends Model
 {
-    protected $table = 'users';
+    //
+    protected $table = 'asbestos_records';
 
     use Notifiable;
 
@@ -18,8 +19,9 @@ class User extends Model
      * @var array
      */
     protected $fillable = [
-        'userID', 'email', 'type', 'foreName', 'surName', 'dob', 'password', 'certDate', 'certExpiry', 
-        'orgID',
+        'asbestosID', 'premisesID', 'location', 'product', 'area', 'surfaceCoating',
+        'asbestosCondition', 'accessibility', 'asbestosType', 'comments', 
+        'materialScore', 'priorityScore', 'planID', 'action', 'actionDate', 'deligate',
     ];
 
    /* protected $guarded = [
@@ -31,23 +33,15 @@ class User extends Model
      *
      * @var array
      */
-    protected $hidden = [
-        'password', //'remember_token',
-    ];
-
-    public function org()
-    {
-        return $this->belongsTo('App\Organisation');
-    }
 
     public function premise()
     {
-        return $this->belongsToMany('App\Premises');
+        return $this->belongsTo('App\Premises');
     }
 
     public function plans()
     {
-        return $this->hasMany('App\AsbestosPlan');
+        return $this->hasOne('App\AsbestosPlan');
     }
 
     public $timestamps = false;

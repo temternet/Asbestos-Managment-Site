@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+    //Route::get('/', 'DashboardCtrl@index');
+    Route::get('/dashboard', 'DashboardCtrl@index');
+    Route::get('/account', 'PagesCtrl@account');
+    Route::get('/premises/{premid?}', 'PremisesCtrl@index');
+    Route::get('/edit_record', 'PagesCtrl@editRecord');
+
+
+    Auth::routes();
+    Route::get('/', 'HomeController@index')->name('home');
+?>

@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
-use App\User;
+use App\Premises;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,18 +14,13 @@ use App\User;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Premises::class, function (Faker $faker) {
     return [
         //'userID'  =>    $faker->unique()->rand(100000),
-        'email' =>  $faker->unique()->safeEmail,
-        'type'  =>  1,
-        'foreName'  =>    $faker->firstName,
-        'surName'  =>    $faker->lastName,
-        'dob'  =>    $faker->date('Y-m-d'),
-        'password'  =>    Hash::make('password'),
-        'certDate'  =>    $faker->date('Y-m-d'),
-        'certExpiry'  =>  $faker->date('Y-m-d', strtotime('+5 years')),
+        'siteID'  =>  1,
+        'userID'  =>    1,
         'orgID'  =>    1,
+        'premisesAdr'  =>    $faker->secondaryAddress,
         //'remember_token' => str_random(10),
     ];   
 });
