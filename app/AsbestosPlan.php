@@ -44,7 +44,7 @@ class AsbestosPlan extends Model
 
     public function records()
     {
-        return $this->belongsTo('App\AsbestosRecord');
+        return $this->hasMany('App\AsbestosRecord');
     }
 
     public $timestamps = false;
