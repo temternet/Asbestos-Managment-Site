@@ -39,7 +39,7 @@ class DashboardCtrl extends Controller
         $premises = PremisesModel::all();
         $plans = PlanModel::all();**/
 
-        if(!session()->has('data'))
+        if(!session()->has('details'))
         {
             return view('pages.dashboard', compact('data', 'num'));
         }
