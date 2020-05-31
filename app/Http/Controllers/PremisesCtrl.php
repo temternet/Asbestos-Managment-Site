@@ -58,7 +58,10 @@ class PremisesCtrl extends Controller
         $premises = PremisesModel::all();
         $plans = PlanModel::all();**/
 
+        if(!session()->has('details'))
+        {
         return view('pages.details', compact('data', 'recs', 'premid', 'num'));
+        }
 
         /**$usr = UserModel::all()->toArray();
         return view('pages.dashboard', compact('usr'));
@@ -77,7 +80,10 @@ class PremisesCtrl extends Controller
      */
     public function create()
     {
-        //
+        if(!session()->has('details'))
+        {
+        return view('pages.add', compact('data', 'recs', 'premid', 'num'));
+        }
     }
 
     /**
@@ -110,7 +116,10 @@ class PremisesCtrl extends Controller
      */
     public function edit($id)
     {
-        //
+        if(!session()->has('details'))
+        {
+        return view('pages.edit', compact('data', 'recs', 'premid', 'num'));
+        }
     }
 
     /**
