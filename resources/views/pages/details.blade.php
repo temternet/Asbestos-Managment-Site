@@ -32,7 +32,7 @@
                   </thread>
                   <tbody>
                     @foreach($recs as $row)
-                      <tr>
+                      <tr class="{{($row->materialScore + $row->priorityScore >= 17) ?  'table-danger' : ''}}">
                         <th scope="row">{{ $num++ }}</th>
                         <td>{{ $row->location }}</td>
                         <td>{{ $row->product }}</td>
