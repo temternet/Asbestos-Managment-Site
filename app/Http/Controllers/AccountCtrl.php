@@ -2,7 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\User as UsrModel;
+use App\Site as SiteModel;
+use App\Premises as PremisesModel;
+use App\Organisation as OrgModel;
+use App\AsbestosPlan as PlanModel;
+
 use Illuminate\Http\Request;
+use DB;
 
 class AccountCtrl extends Controller
 {
