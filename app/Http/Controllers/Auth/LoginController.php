@@ -27,7 +27,7 @@ class LoginController extends Controller
      */
     function index(Request $sesh)
     {
-        $sesh->session()->put('data',$sesh->input());
+        $sesh->session()->put('details',$sesh->input());
         //return $sesh->session()->get('data');
         //protected $redirectTo = '/dashboard';
         return redirect('/dashboard');

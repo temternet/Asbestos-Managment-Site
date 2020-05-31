@@ -13,7 +13,23 @@ class AccountCtrl extends Controller
      */
     public function index()
     {
-        //
+        $num = 1;
+
+        $data = DB::table('premises')
+                ->join('sites', 'sites.siteID', '=', 'premises.siteID')
+                ->join('users', 'users.userID', '=', 'premises.userID')
+                ->join('asbestos_plans', 'asbestos_plans.premisesID', '=', 'premises.premisesID')
+                ->join('organisations', 'organisations.orgID', '=', 'premises.orgID')
+                ->select('premises.premisesID', 'premises.premisesAdr', 'sites.addressL1', 'sites.addressL2', 
+                'sites.town', 'sites.county', 'sites.postCode', 'sites.lAuth', 'organisations.orgName', 
+                'asbestos_plans.monitorDate', 'users.foreName', 'users.surName')
+                ->get();
+
+
+        if(!session()->has('details'))
+        {
+            return view('pages.account', compact('data', 'num'));
+        }
     }
 
     /**
