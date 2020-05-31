@@ -43,7 +43,7 @@
                       <th scope="col">Next Monitor Date</th>
                     </tr>
                     @foreach($data as $row)
-                      <tr>
+                      <tr class="{{($row->monitorDate == date('Ymd')) ?  'table-info' : ''}}">
                         <td><a href="/premises/{{$row->premisesID}}">{{ $num++ }}</a></td>
                         <td><a href="/premises/{{$row->premisesID}}">{{ $row->orgName }}</a></td>                    
                         <td><a href="/premises/{{$row->premisesID}}">{{ $row->premisesAdr . ', ' . $row->addressL1 . ', ' . 
