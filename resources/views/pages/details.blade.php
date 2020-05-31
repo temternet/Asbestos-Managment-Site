@@ -52,7 +52,7 @@
                     @endforeach
                   <?php  ?>
                 </table>
-                <button type="submit" class="btn btn-primary">Add new record</button>
+                <button type="submit" class="btn btn-primary" href="">Add new record</button>
               </div>
            </div>
          </div>

@@ -15,7 +15,11 @@
     Route::get('/dashboard', 'DashboardCtrl@index');
     Route::get('/account', 'AccountCtrl@index');
     Route::get('/premises/{premid?}', 'PremisesCtrl@index');
-    Route::get('/edit_record', 'PagesCtrl@editRecord');
+    Route::get('/new_record', 'PremisesCtrl@create');
+    Route::get('/edit_record', 'PremisesCtrl@edit');
+    Route::get('/record_updated', 'PremisesCtrl@update');
+    //Route::get('/new_record', 'Ctrl@create');
+    //Route::get('/edit_record', 'Ctrl@update');
 
 
     Auth::routes();
