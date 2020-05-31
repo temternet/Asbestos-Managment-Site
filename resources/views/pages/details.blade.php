@@ -47,12 +47,12 @@
                         <td>{{ $row->action }}</td>
                         <td>{{ $row->actionDate }}</td>
                         <td>{{ $row->deligate }}</td>
-                        <td><button type="submit" class="btn btn-primary">Edit</button></td>
+                        <td><button type="submit" class="btn btn-primary" href="/edit_record">Edit</button></td>
                       </tr>
                     @endforeach
                   <?php  ?>
                 </table>
-                <button type="submit" class="btn btn-primary" href="">Add new record</button>
+                <button type="submit" class="btn btn-primary" href="/new_record">Add new record</button>
               </div>
            </div>
          </div>
