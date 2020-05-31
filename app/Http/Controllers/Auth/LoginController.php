@@ -25,8 +25,13 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
-
+    function index(Request $sesh)
+    {
+        $sesh->session()->put('data',$sesh->input());
+        //return $sesh->session()->get('data');
+        //protected $redirectTo = '/dashboard';
+        return redirect('/dashboard');
+    }
     /**
      * Create a new controller instance.
      *
