@@ -13,7 +13,7 @@
 
     //Route::get('/', 'DashboardCtrl@index');
     Route::get('/dashboard', 'DashboardCtrl@index');
-    Route::get('/account', 'AccountCtrl@account');
+    Route::get('/account', 'AccountCtrl@index');
     Route::get('/premises/{premid?}', 'PremisesCtrl@index');
     Route::get('/edit_record', 'PagesCtrl@editRecord');
 
