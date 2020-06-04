@@ -11,7 +11,7 @@
 |
 */
 
-    //Route::get('/', 'DashboardCtrl@index');
+    Route::get('/', 'DashboardCtrl@index');
     Route::get('/dashboard', 'DashboardCtrl@index');
     Route::get('/account', 'AccountCtrl@index');
     Route::get('/premises/{premid?}', 'PremisesCtrl@index');
@@ -22,6 +22,6 @@
     //Route::get('/edit_record', 'Ctrl@update');
 
 
-    Auth::routes();
-    Route::get('/', 'HomeController@index')->name('home');
+    //Auth::routes();
+    //Route::get('/', 'HomeController@index')->name('home');
 ?>
